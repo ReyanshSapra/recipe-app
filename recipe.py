@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-def get_recipes_by_ingredients(ingredients, offset=0, number=50):
+def get_recipes_by_ingredients(ingredients, offset=0, number=10000):
     api_endpoint = "https://api.spoonacular.com/recipes/findByIngredients"
     api_key = "4d490bbdedff409d9f1eaade0aff5676"
     params = {
