@@ -5,20 +5,19 @@ st.set_page_config(page_title="Dish Generator", page_icon="🍴")
 
 st.markdown("""
     <style>
-        .bottom-right {
+        .center-text {
             position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background-color: white;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: black;
         }
     </style>
 """, unsafe_allow_html=True)
 
-# Display static text within the bottom right container
-st.markdown("<div class='bottom-right'>Reyansh Sapra</div>", unsafe_allow_html=True)
+
+st.markdown("<div class='center-text'>Reyansh Sapra</div>", unsafe_allow_html=True)
 
 def get_recipes_by_ingredients(ingredients, offset=0, number=10000):
     api_endpoint = "https://api.spoonacular.com/recipes/findByIngredients"
