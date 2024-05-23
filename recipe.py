@@ -1,6 +1,8 @@
 import streamlit as st
 import requests
 
+st.set_page_config(page_title="Dish Generator", page_icon="🍴")
+
 def get_recipes_by_ingredients(ingredients, offset=0, number=10000):
     api_endpoint = "https://api.spoonacular.com/recipes/findByIngredients"
     api_key = "4d490bbdedff409d9f1eaade0aff5676"
@@ -14,7 +16,7 @@ def get_recipes_by_ingredients(ingredients, offset=0, number=10000):
     return response.json()
 
 def main():
-    st.title("Recipe Finder")
+    st.title("Dish Generator")
 
     st.header("Search by Ingredients")
     ingredients_input = st.text_input("Enter the ingredients you have, separated by commas")
