@@ -7,7 +7,7 @@ st.markdown("""
     <style>
         .center-text {
             position: fixed;
-            top: 5%;
+            top: 95%;
             left: 10%;
             transform: translate(-50%, -50%);
             font-size: 24px;
