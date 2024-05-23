@@ -11,7 +11,7 @@ st.markdown("""
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 24px;
-            color: black;
+            color: white;
         }
     </style>
 """, unsafe_allow_html=True)
