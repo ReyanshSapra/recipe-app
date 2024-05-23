@@ -3,21 +3,6 @@ import requests
 
 st.set_page_config(page_title="Dish Generator", page_icon="🍴")
 
-st.markdown("""
-    <style>
-        .center-text {
-            position: fixed;
-            top: 95%;
-            left: 10%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            color: white;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-
-st.markdown("<div class='center-text'>Reyansh Sapra</div>", unsafe_allow_html=True)
 
 def get_recipes_by_ingredients(ingredients, offset=0, number=10000):
     api_endpoint = "https://api.spoonacular.com/recipes/findByIngredients"
